@@ -1,4 +1,22 @@
 // ======AES256-START==========
+/**
+ * @license Gibberish-AES 
+ * A lightweight Javascript Libray for OpenSSL compatible AES CBC encryption.
+ *
+ * Author: Mark Percival
+ * Email: mark@mpercival.com
+ * Copyright: Mark Percival - http://mpercival.com 2008
+ *
+ * With thanks to:
+ * Josh Davis - http://www.josh-davis.org/ecmaScrypt
+ * Chris Veness - http://www.movable-type.co.uk/scripts/aes.html
+ * Michel I. Gallant - http://www.jensign.com/
+ *
+ * License: MIT
+ *
+ * Usage: GibberishAES.enc("secret", "password")
+ * Outputs: AES Encrypted text encoded in Base64
+ */
 var GibberishAES = (function () {
 	var Nr = 14,
 		/* Default to 256 Bit Encryption */
